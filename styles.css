@@ -8,19 +8,29 @@
 }
 
 body{
-    
-    background-color: orange;
-    text-align: center;
-    height: 100vh;
-    display: flex;
-    flex-direction: column;
-    text-align: center;
-
-
+  
+    background-color: #F7931A;
+}
+header,footer{
+    padding:10px 25px ;
+}
+.row-1, .row-4{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+}
+.row-2, .row-3{
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
 }
 
-#countdown{
-    font-size: 16rem;
-    margin :auto 0;
-    font-variant-numeric: tabular-nums;
-    }
+.card{
+    border:3px solid black;
+    margin-bottom: 0.5px;
+    padding:20px;
+    border-radius: 10px;
+    background-color: azure;
+}
+
+.row-1 .card, .row-4 .card{
+    height: 300px;
+}
